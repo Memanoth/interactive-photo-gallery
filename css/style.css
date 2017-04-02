@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ID */
+#search {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 16pt;
+}
+
+
+/* CLASSES */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-thumbnail img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.image-thumbnail div {
+    display: inline-block;
+}
+
+/* LIGHTBOX */
+
+.lightboxOverlay {
+    background-color: #2F2F2F;
+    opacity: 0.99;
+}
+
+.lightbox .lb-image {
+    border: none;
+}
+
+.lb-data .lb-details {
+    max-width: 600px;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.lb-data .lb-caption {
+    font-weight: inherit;
+    font-size: 1rem;
+}
+
+.lb-data .lb-close {
+    display: none;
+}
+
+.lb-outerContainer {
+    background-color: inherit;
+}
+
+@media(min-width: 750px) {
+
+.container {
+    max-width: 920px;
+}
+
+#search {
+    max-width: 400px;
+}
+
+/* LIGHTBOX */
+.lb-nav {
+    left: -25%;
+    width: 150%;
+}
+
+
+}
