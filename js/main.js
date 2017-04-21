@@ -1,9 +1,11 @@
 
 //LIGHTBOX SCRIPT
 $('.image-thumbnail').magnificPopup({
+  //General Options
   delegate: 'a',
   type: 'image',
   autoFocusLast: false,
+  showCloseBtn: false,
 
   //Image Options
   image: {
