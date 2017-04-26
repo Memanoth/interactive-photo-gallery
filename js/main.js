@@ -9,7 +9,7 @@ $('.image-thumbnail').magnificPopup({
 
   //Image Options
   image: {
-    titleSrc: 'data-title'
+    titleSrc: 'data-caption'
   },
   gallery: {
     enabled: true,
@@ -63,9 +63,8 @@ $('#search').keyup(function() {
     $('.image-thumbnail a').each(function() {
 
       //Store data-title and alt attributes in appropriate variables
-      $caption = $(this).attr("data-title").toLowerCase();
+      $caption = $(this).attr("data-caption").toLowerCase();
       $title = $(this).children().attr("alt").toLowerCase();
-      console.log($caption);
 
       // Match the title and caption to search input
       if ($title.includes($search) || $caption.includes($search)) {
